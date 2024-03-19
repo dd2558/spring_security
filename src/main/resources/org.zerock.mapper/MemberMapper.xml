@@ -16,7 +16,7 @@
     </collection> 
   </resultMap>
   
-  <resultMap type="kr.co.chunjae.domain.AuthVO" id="authMap">
+  <resultMap type="org.zerock.domain.AuthVO" id="authMap">
     <result property="userid" column="userid"/>
     <result property="auth" column="auth"/>
   </resultMap>

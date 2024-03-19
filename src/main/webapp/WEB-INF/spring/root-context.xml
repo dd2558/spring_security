@@ -11,7 +11,7 @@
 	
 	<!--  스프링이 하는걸 담당한다. 스프링은 원래 웹전용이 아니다. 하지만 웹에서 쓰기편하기때문에스프링으로 알고있다 -->
 
-	
+	<mybatis-spring:scan base-package="org.zerock.mapper"/>	
 	
 	<bean id="hikariConfig" class="com.zaxxer.hikari.HikariConfig">
 		<!--  
@@ -37,7 +37,8 @@
 		<property name="dataSource" ref="dataSource"></property>
 	</bean>
 	
-	<mybatis-spring:scan base-package="org.zerock.mapper"/>
+	
+	<context:component-scan base-package="org.zerock.mapper"/>
 	
 	
 </beans>
