@@ -8,5 +8,7 @@
 </head>
 <body>
 	<h1>/sample/all page</h1>
+	
+	<a href="/customLogout">Logout</a>
 </body>
 </html>
