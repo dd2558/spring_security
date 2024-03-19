@@ -7,6 +7,7 @@
 
 <bean id = "customAccesDenid" class ="org.zerock.security.CustomAccessDeniedHandler"></bean>
 <bean id = "customLoginSuccess" class ="org.zerock.security.CustomLoginSuccessHandler"></bean>
+<bean id = "customPasswordEncoder" class ="org.zerock.security.CustomNoPasswordEncoder"></bean>
 		
 		
 		
@@ -51,6 +52,7 @@
 	-->
 	
 		<security:jdbc-user-service data-source-ref="dataSource"/>
+		<security:password-encoder ref="customPasswordEncoder"/>
 		
 	</security:authentication-provider>
 
